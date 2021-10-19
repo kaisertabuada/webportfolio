@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@700&display=swap');
+
+* {
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url('./images/wall.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.uniNav {
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+}
+.welcome {
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('./images/geo.png'); 
+	/*geo.png*/
+	height: 100vh;
+	background-size: cover;
+	/*background-position: center;*/
+	background-attachment: fixed;
+}
+
+@media (min-width: 1440px) {
+	.proj {
+		padding-top: 1rem;
+	}
+	#myProjects {
+		height: 160vh;
+	}
+	.img1 {
+		width: 75%;
+		height: auto;
+	}
+}
+@media (min-width: 1024px) {
+	#row1 {
+		padding-top: 5rem;
+	}
+	#row2 {
+		padding-top: 2rem;
+	}
+	.bio {
+		font-size: 30px;
+	}
+}
+@media (min-width: 768px) {
+	#row1 {
+		padding-top: 12rem;
+	}
+	#row2 {
+		padding-top: 4rem;
+	}
+	.bio {
+		font-size: 50px;
+	}
+	.proj {
+		padding-top: 10rem;
+	}
+}
+@media (min-width: 360px) {
+	.bio {
+		font-size: 15px;
+	}
+
+	.img1 {
+		padding-top: 2rem;
+	}
+
+	.proj {
+		padding-top: 2rem;
+	}
+}
+.uniNav div ul li a:hover {
+	border: 1px solid white transparent;
+	border-radius: 10px;
+	background-color: #af4d78;
+	transition: 0.6s ease;
+}
+.aboutMe {
+	margin-top: 10rem;
+	/*background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)), url('./images/geo.png');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;*/
+}
+.clickMe {
+	text-decoration: none;
+	color: white;
+}
+.clickMe:hover {
+	font-style: italic;
+	color: #af4d78;
+	text-decoration: blink;
+}
+#introCode {
+	color: white;
+}
+#introCode:hover {
+	color: #af4d78;
+	transition: 0.4s ease;
+}
+.title1 {
+	font-family: 'Montserrat', sans-serif;
+}
+.crslImg {
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7))
+}
+#card {
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9));
+}
+.arts {
+	padding-top: 5rem;
+}
+#cardTitle {
+	font-family: 'Montserrat', sans-serif;
+}
+#myProjects {
+	margin-top: 10rem;
+	/*background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)), url('./images/geo.png');
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;*/
+}
