@@ -60,6 +60,10 @@ body {
 		width: 70%;
 		height: auto;
 	}
+	.skills {
+		padding-top: 10rem;
+		padding-bottom: 2rem;
+	}
 
 
 }
@@ -79,6 +83,10 @@ body {
 	.img1 {
 		width: 50%;
 		height: auto;
+	}
+	.skills {
+		padding-top: 3rem;
+		padding-bottom: 2rem;i
 	}
 	
 }
@@ -102,6 +110,15 @@ body {
 		width: 100%;
 		height: auto;
 	}
+	.skills {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+
+.img1 {
+	width: 100%;
+	height: auto;
 }
 .uniNav div ul li a{
 	border: 1px solid white transparent;
@@ -150,8 +167,9 @@ body {
 }
 #myProjects {
 	margin-top: 10rem;
-	/*background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)), url('./images/geo.png');
 	height: 100%;
+	/*background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)), url('./images/geo.png');
+	
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;*/
@@ -180,7 +198,7 @@ body {
 	height: auto;
 }*/
 #contacts {
-	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('./images/geo.png');
+	/*background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url(./images/geo.png);*/
 	height: 100%;
 	background-size: cover;
 	background-position: center;
@@ -194,18 +212,28 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 #myMap {
-	height: 600px;
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(./images/retro.jpg);
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+#mapFrame {
+	width: 90%;
+	height: 90%;
 }
 
 #icon {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: white;
+	transition: color 0.3s;
 }
-
+#icon:hover {
+	color: #af4d78;
+}
 #logo1 {
 	font-family: 'Cookie', cursive;
 	font-style: italic;
-	font-size: 30px;
+	font-size: 35px;
 	transition: color 0.4s;
 }
 #logo1:hover {
@@ -217,7 +245,42 @@ body {
 #sign {
 	font-family: 'Montserrat', sans-serif;
 }
-
+#myForm {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(./images/retro.jpg);
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
 #postPage {
-	width: 200px;
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(./images/2.gif);
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+#icon2 {
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s;
+}
+#icon2:hover {
+	color: #af4d78;
+	text-decoration: none;
+}
+#postPageLinks {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s;
+}
+#postPageLinks:hover {
+	color: #af4d78;
+}
+
+.skills {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	max-height: 100%;
 }
