@@ -8,10 +8,12 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 	</head>
+
 	<body>
-		<nav class="uniNav navbar navbar-expand-lg navbar-dark py-1 sticky-top shadow mr-0" id="navbarLinks">
+		<!-- Navigation Bar -->
+		<nav class="uniNav navbar navbar-expand-lg navbar-dark py-1 fixed-top shadow mr-0" id="navbarLinks">
 			<div>
-				<a id="logo1" class="navbar-brand pl-3" href="#1">Kaiser</a>
+				<a id="logo1" class="navbar-brand pl-3 font-italic font-weight-bold" href="#1">Kaiser</a>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -35,14 +37,22 @@
 						<a class="nav-link text-white px-2" href="#4">Contact</a>
 					</li>
 				</ul>
+				<!-- Social Media Links -->
 				<a class="px-2" href="https://facebook.com/misterkrumbsofficial" target="_blank"><i id="icon" class="bi bi-facebook"></i></a>
 				<a class="px-2" href="https://instagram.com/misterkrumbs" target="_blank"><i id="icon" class="bi bi-instagram"></i></a>
 				<a class="px-2" href="https://youtube.com/user/misterkrumbs" target="_blank"><i id="icon" class="bi bi-youtube"></i></a>
 				<a class="px-2" href="https://artists.spotify.com/c/artist/1bjnUYTa2n0FUmHeHwb71h/profile/overview" target="_blank"><i id="icon" class="bi bi-spotify"></i></a>
 			</div>
 		</nav>
-
+		<div class="header">
+			<div class="progress-container">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+		</div>
+		
+		<!-- Main Page -->
 		<section data-spy="scroll" data-target="#navbar-example2 navbarLinks" data-offset="50">
+			<!-- Welcome Section -->
 			<div class="welcome jumbotron">
 				<div id="row1" class="row align-items-center">
 					<div class="col-12 col-md-6 col-lg-8 col-xl-7 order-2 order-md-1 order-lg-2 pt-3">
@@ -51,7 +61,7 @@
 						<h5 class="text-light pt-1">If you want to see what I can do, <a id="navbarLinks" class="clickMe" href="#2" role="button">click me!</a></h5>	
 					</div>
 					<div class="col-12 col-md-6 col-lg-4 col-xl-5 order-1 order-md-2 order-lg-1 text-right">
-						<div class="d-block ml-auto">
+						<div id="spiel" class="d-block ml-auto">
 							<h1 class="text-monospace text-danger">&lt;<span id="introCode" class="text-monospace">hello!</span>&gt;</h1>
 							<h1 class="text-monospace text-danger">&lt;<span id="introCode" class="text-monospace">welcome</span>&gt;</h1>
 							<h1 class="text-monospace text-danger">&lt;<span id="introCode" class="text-monospace">to my</span>&gt;</h1>
@@ -60,11 +70,12 @@
 					</div>
 				</div>
 			</div>
-
+			<hr class="line py-3">
+			<!-- About Me Section -->
 			<div class="aboutMe jumbotron bg-transparent mx-auto">
 				<!-- Scrollspy destination -->
 				<div id="1" class="p-1"></div>
-				 <!-- end of destination -->
+				<!-- end of destination -->
 				<div id="row2" class="row align-items-center">
 					<div class="col-12 col-md-12 col-lg-6 order-2 order-md-1 order-lg-2">
 						<h1 id="about-me" class="text-monospace text-danger text-center text-md-left text-lg-right">&lt;<span id="introCode" class="text-monospace">who is kaiser?</span>&gt;</h1>
@@ -75,7 +86,7 @@
 					</div>
 				</div>
 			</div>
-
+			<!-- My Projects Section -->
 			<div id="myProjects" class="jumbotron jumbotron-fluid bg-transparent mb-0">
 				<div id="2" class="p-3"></div>
 				<h1 class="proj text-monospace text-danger text-center">&lt;<span id="introCode" class="text-monospace">things i can do</span>&gt;</h1>
@@ -133,13 +144,13 @@
 				</div>
 
 				<div class="w-75 mx-auto pt-5 pb-1">
-					<h3 class="text-center text-light font-weight-bold">Here are some of my graphic designs.</h3>
+					<h3 class="text-center text-light font-weight-bold">Here are some of my <span class="graphic">graphic designs.</span></h3>
 				</div>
 
 				<div class="arts container-fluid text-center pt-3">
 					<div class="row row-cols-1 row-cols-lg-3 justify-content-center">
 						<div class="col-12 col-md-8 col-lg-4 mb-4">
-							<div id="card" class="card text-light h-100 shadow border-danger">
+							<div id="card" class="card text-light h-100 shadow border-primary">
 								<img src="./images/knln.jpg" class="card-img-top mx-auto p-3">
 								<div class="card-body">
 									<h5 id="cardTitle" class="card-title font-weight-bold">Kanlaon</h5>
@@ -148,7 +159,7 @@
 							</div>
 						</div>
 						<div class="col-12 col-md-8 col-lg-4 mb-4">
-							<div id="card" class="card text-light h-100 shadow border-danger">
+							<div id="card" class="card text-light h-100 shadow border-primary">
 								<img src="./images/afternoon sessions.jpg" class="card-img-top mx-auto p-3">
 								<div class="card-body">
 									<h5 id="cardTitle" class="card-title font-weight-bold">Afternoon Sessions</h5>
@@ -157,7 +168,7 @@
 							</div>
 						</div>
 						<div class="col-12 col-md-8 col-lg-4 mb-4">
-							<div id="card" class="card text-light h-100 shadow border-danger">
+							<div id="card" class="card text-light h-100 shadow border-primary">
 								<img src="./images/dskrt artwork.jpg" class="card-img-top mx-auto p-3">
 								<div class="card-body">
 									<h5 id="cardTitle" class="card-title font-weight-bold">DSKRT</h5>
@@ -168,9 +179,9 @@
 					</div>
 				</div>
 			</div>
-			<div id="3" class="p-5"></div>
+			<div id="3" class="p-3"></div>
+			<!-- Skills Section -->
 			<div class="skills container-fluid">
-				
 				<div class="jumbotron-fluid">
 					<h1 class="proj text-monospace text-danger text-center">&lt;<span id="introCode" class="text-monospace">talk about skills</span>&gt;</h1>
 					<div class="text-center">
@@ -193,43 +204,48 @@
 					</div>
 				</div>
 			</div>
-
+			<!-- Contact Section -->
 			<div id="contactMe" class="container-fluid pt-5">
 				<div id="4" class="p-3"></div>
 				<h1 class="proj text-monospace text-danger text-center">&lt;<span id="introCode" class="text-monospace">contact me</span>&gt;</h1>
 				<div class="w-75 mx-auto">
-					<p class="text-center text-light font-weight-bold text-wrap text-muted">If you are interested in my ideas and designs, feel free to contact me.</p>
+					<p class="text-center text-light font-weight-light text-wrap text-muted">If you are interested in my ideas and designs, feel free to contact me.</p>
 				</div>
-
 				<div id="contacts" class="jumbotron bg-transparent">
 					<div class="row">
+						<!-- Contact Form -->
 						<div class="col-12 col-md-12 col-lg-6 p-3">
-							<h3 class="text-center text-light">Send me an email</h3>
+							<!-- <h3 class="text-center text-light font-italic font-weight-bold">Send me an email</h3> -->
 							<form id="myForm" action="" class="container-fluid rounded-lg px-3 py-4">
-								<div class="text-center pt-4">
-									<input id="myInput" type="text" class="form-control w-100 mx-auto font-weight-light rounded-lg" placeholder="Full Name" required>
+								<div class="pt-4">
+									<label class="text-white" for="name">Full Name:</label>
+									<input id="myInput" type="text" class="form-control w-100 mx-auto font-weight-light rounded-lg text-light">
 								</div>
-								<div class="text-center pt-4">
-									<input type="email" class="form-control w-100 mx-auto font-weight-light rounded-lg" id="myInput" aria-describedby="emailHelp" placeholder="Email Address" required>
+								<div class="pt-4">
+									<label class="text-white" for="email">Email:</label>
+									<input type="email" class="form-control w-100 mx-auto font-weight-light rounded-lg text-light" id="myInput" aria-describedby="emailHelp">
 								</div>
-								<div class="text-center pt-4">
-									<input id="myInput" type="tel" class="form-control w-100 mx-auto font-weight-light rounded-lg" placeholder="Contact Number" required>
+								<div class="pt-4">
+									<label class="text-white" for="number">Contct Number:</label>
+									<input id="myInput" type="tel" class="form-control w-100 mx-auto font-weight-light rounded-lg text-light">
 								</div>
-								<div class="text-center pt-4">
-									<input id="myInput" type="text" class="form-control w-100 mx-auto font-weight-light rounded-lg" placeholder="Subject" required>
+								<div class="pt-4">
+									<label class="text-white" for="subject">Subject:</label>
+									<input id="myInput" type="text" class="form-control w-100 mx-auto font-weight-light rounded-lg text-light">
 								</div>
-								<div class="text-center pt-4">
-									<textarea id="myInput" cols="30" rows="8" class="form-control w-100 font-weight-light rounded-lg" placeholder="Message"></textarea>
+								<div class="pt-4">
+									<label class="text-white" for="message">Message:</label>
+									<textarea id="myInput" cols="30" rows="6" class="form-control w-100 font-weight-light rounded-lg text-light"></textarea>
 								</div>
 								<!-- Button trigger modal -->
 								<div class="py-3 d-flex justify-content-center">
-									<button id="myInput" type="button" class="btn btn-light bg-light p-1 mt-2 mx-auto shadow-sm font-weight-bold" data-toggle="modal" data-target="#exampleModal">
+									<button type="button" class="btn btn-dark bg-primary font-weight-bold" data-toggle="modal" data-target="#exampleModal">
 										Send Email
 									</button>
 
 									<!-- Modal -->
 									<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-										<div class="modal-dialog">
+										<div class="modal-dialog modal-dialog-centered">
 											<div class="modal-content">
 												<div class="modal-header" >
 													<h5 id="myModal" class="modal-title font-weight-bold">Thank you for contacting us!</h5>
@@ -249,58 +265,75 @@
 								</div>
 							</form>
 						</div>
+						<!-- Maps -->
 						<div class="col-12 col-md-12 col-lg-6 p-3">
-							<h3 class="text-center text-light">Post me a letter</h3>
-							<div id="myMap" class="d-flex justify-content-center align-items-center">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.839982061526!2d122.57202761406776!3d10.746813192341609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee48ce2c42961%3A0x62f5f5a5ae86e0a7!2sSan%20Sebastian%2C%20Jaro%2C%20Iloilo%20City%2C%20Iloilo!5e0!3m2!1sen!2sph!4v1634658024508!5m2!1sen!2sph" id="mapFrame" class="rounded-lg" loading="lazy"></iframe>
+							<!-- <h3 class="text-center text-light font-italic font-weight-bold pt-1">Post me a letter</h3> -->
+							<div id="myMap" class="d-flex justify-content-center align-items-center rounded-lg">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.839982061526!2d122.57202761406776!3d10.746813192341609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aee48ce2c42961%3A0x62f5f5a5ae86e0a7!2sSan%20Sebastian%2C%20Jaro%2C%20Iloilo%20City%2C%20Iloilo!5e0!3m2!1sen!2sph!4v1634658024508!5m2!1sen!2sph" id="mapFrame" class="rounded-lg p-2" loading="lazy"></iframe>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
+		<!-- Bottom Section -->
 		<section>
 			<div id="postPage" class="jumbotron jumbotron-fluid px-5">
 				<div class="container-fluid">
 					<div class="row pb-3">
-						<div class="col-12 col-md-4 col-lg-4">
-							<ul class="list-unstyled">
+						<div class="col-12 col-md-12 col-lg-3 order-1 order-md-1 d-flex justify-content-center align-items-center">
+							<ul class="list-unstyled ">
 								<li class="py-1"><a id="postPageLinks" href="#1">About</a></li>
 								<li class="py-1"><a id="postPageLinks" href="#2">Project</a></li>
 								<li class="py-1"><a id="postPageLinks" href="#3">Skills</a></li>
 								<li class="py-1"><a id="postPageLinks" href="#4">Contact</a></li>
 							</ul>
 						</div>
-						<div class="col-12 col-md-4 col-lg-4">
-							<ul class="list-unstyled">
-								<li class="py-1"><a id="pageLinks" href="https://facebook.com/misterkrumbsofficial" target="_blank"><i id="icon2" class="bi bi-facebook"> Facebook</i></a></li>
-								<li class="py-1"><a id="pageLinks" href="https://instagram.com/misterkrumbs" target="_blank"><i id="icon2" class="bi bi-instagram"> Instagram</i></a></li>
-								<li class="py-1"><a id="pageLinks" href="https://youtube.com/user/misterkrumbs" target="_blank"><i id="icon2" class="bi bi-youtube"> Youtube</i></a></li>
-								<li class="py-1"><a id="pageLinks" href="https://artists.spotify.com/c/artist/1bjnUYTa2n0FUmHeHwb71h/profile/overview" target="_blank"><i id="icon2" class="bi bi-spotify"> Spotify</i></a></li>
+						<div class="col-12 col-md-12 col-lg-3 order-2 order-md-2 d-flex justify-content-center align-items-center">
+							<ul class="list-unstyled d-inline-flex">
+								<li class="py-1"><a id="pageLinks" href="https://facebook.com/misterkrumbsofficial" target="_blank"><i id="icon2" class="bi bi-facebook px-3"></i></a></li>
+								<li class="py-1"><a id="pageLinks" href="https://instagram.com/misterkrumbs" target="_blank"><i id="icon2" class="bi bi-instagram px-3"></i></a></li>
+								<li class="py-1"><a id="pageLinks" href="https://youtube.com/user/misterkrumbs" target="_blank"><i id="icon2" class="bi bi-youtube px-3"></i></a></li>
+								<li class="py-1"><a id="pageLinks" href="https://artists.spotify.com/c/artist/1bjnUYTa2n0FUmHeHwb71h/profile/overview" target="_blank"><i id="icon2" class="bi bi-spotify px-3"></i></a></li>
 							</ul>
 						</div>
-						<div class="col-12 col-md-3 col-lg-3">
-							<label class="text-light" for="email">Do you want to receive newsletters frome me?</label>
+						<div class="col-12 col-md-6 col-lg-3 order-3 order-md-3 float-md-right">
+							<label class="text-muted" for="email">Do you want to receive newsletters from me?</label>
 							<div class="text-center pt-3">
-								<input type="email" class="form-control w-100 mx-auto font-weight-light rounded-lg" aria-describedby="emailHelp" placeholder="Email Address">
+								<input id="newsletter" type="email" class="form-control w-100 mx-auto text-light rounded-lg" aria-describedby="emailHelp" placeholder="Email Address">
 							</div>
-							<button class="btn bg-primary mt-4">Subscribe</button>
+							<div class="d-flex justify-content-end">
+								<button class="btn bg-primary mt-4 text-light">Subscribe</button>
+							</div>
+						</div>
+						<div class="col-12 col-md-12 col-lg-3 order-4 order-md-4 d-flex justify-content-end align-items-center pt-3">
+							<ul class="list-unstyled text-right">
+								<li class="py-1 text-muted">djizaktabuada@gmail.com</li>
+								<li class="py-1 text-muted">+63 966-904-4981 (Globe)</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
+		<!-- Footer -->
 		<footer id="myFooter" class="fixed-bottom">
 			<div class="d-flex justify-content-center align-items-center p-2">
 				<p id="sign" class="text-muted mb-0"> &copy; Kaiser Tabuada | 2021</p>
 			</div>
 		</footer>
-
-
 		<!-- JavaScript -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			function myFunction() {
+				var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+				var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				var scrolled = (winScroll / height) * 100;
+				document.getElementById("myBar").style.width = scrolled + "%";
+			}
+		</script>
 	</body>
 </html>

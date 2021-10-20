@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+/*Web fonts import stance*/
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Festive&family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@300;700&family=Permanent+Marker&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
 
+/*Main sheet*/
 * {
-	font-family: 'Montserrat Alternates', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 html {
 	scroll-behavior: smooth;
@@ -16,17 +17,16 @@ body {
 	background-attachment: fixed;
 }
 .uniNav {
-	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9));
 }
 .welcome {
 	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('./images/geo.png'); 
 	/*geo.png*/
 	height: 100vh;
 	background-size: cover;
-	/*background-position: center;*/
+	background-position: center;
 	background-attachment: fixed;
 }
-
 @media (min-width: 1440px) {
 	.proj {
 		padding-top: 1rem;
@@ -34,11 +34,10 @@ body {
 	#myProjects {
 		height: 160vh;
 	}
-	
 }
 @media (min-width: 1024px) {
 	#row1 {
-		padding-top: 5rem;
+		padding-top: 1rem;
 	}
 	#row2 {
 		padding-top: 2rem;
@@ -64,8 +63,6 @@ body {
 		padding-top: 10rem;
 		padding-bottom: 2rem;
 	}
-
-
 }
 @media (min-width: 768px) {
 	#row1 {
@@ -87,8 +84,7 @@ body {
 	.skills {
 		padding-top: 3rem;
 		padding-bottom: 2rem;i
-	}
-	
+	}	
 }
 @media (min-width: 360px) {
 	.bio {
@@ -114,8 +110,10 @@ body {
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 	}
+	#spiel {
+		padding-top: 3.5rem;
+	}
 }
-
 .img1 {
 	width: 100%;
 	height: auto;
@@ -129,7 +127,7 @@ body {
 	background-color: #af4d78;
 }
 .aboutMe {
-	margin-top: 10rem;
+	margin-top: 6rem;
 	width: 80%;
 	height: auto;
 }
@@ -168,11 +166,6 @@ body {
 #myProjects {
 	margin-top: 10rem;
 	height: 100%;
-	/*background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)), url('./images/geo.png');
-	
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;*/
 }
 #des {
 	font-family: 'Cookie', cursive;
@@ -190,13 +183,8 @@ body {
 }
 #innv:hover {
 	color: orangered;
-	
+	font-style: italic;
 }
-/*#contactMe {
-	margin-top: 12rem;
-	width: 80%;
-	height: auto;
-}*/
 #contacts {
 	/*background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url(./images/geo.png);*/
 	height: 100%;
@@ -204,9 +192,13 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 }
-
 #myInput {
 	font-family: 'Montserrat', sans-serif;
+	background-color: transparent;
+	border-bottom: 1px solid white;
+}
+#myInput:focus {
+	border: 2px solid #af4d78;
 }
 #myModal {
 	font-family: 'Montserrat', sans-serif;
@@ -221,7 +213,6 @@ body {
 	width: 90%;
 	height: 90%;
 }
-
 #icon {
 	font-size: 1.5rem;
 	color: white;
@@ -259,10 +250,10 @@ body {
 	background-attachment: fixed;
 }
 #icon2 {
-	font-size: 1rem;
+	font-size: 2rem;
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
-	color: white;
+	color: gray;
 	transition: color 0.3s;
 }
 #icon2:hover {
@@ -272,15 +263,51 @@ body {
 #postPageLinks {
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
-	color: white;
+	color: gray;
 	transition: color 0.3s;
 }
 #postPageLinks:hover {
 	color: #af4d78;
 }
-
 .skills {
-	padding-top: 10rem;
+	padding-top: 6rem;
 	padding-bottom: 10rem;
 	max-height: 100%;
+}
+.graphic {
+	font-family: 'Cookie', cursive;
+	font-size: 2.5rem;
+	font-style: italic;
+	transition: color 0.3s;
+}
+.graphic:hover {
+	color: yellow;
+}
+.header {
+	padding-top: 4.3rem;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+.progress-container {
+	width: 100%;
+	height: 4px;
+	background: transparent;
+}
+.progress-bar {
+	height: 4px;
+	background: #af4d78;
+	width: 0%;
+}
+
+#newsletter {
+	background-color: transparent;
+	border-bottom: 1px solid white;
+}
+#newsletter:focus {
+	border: 2px solid #af4d78;
+}
+.line {
+	color: white;
 }
